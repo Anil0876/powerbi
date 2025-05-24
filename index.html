@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Power BI Certificate Template - Koption</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@400&family=Montserrat:wght@600&display=swap');
+
+  body {
+    margin: 0;
+    background: #fdfdfd;
+    font-family: 'Roboto', sans-serif;
+  }
+  .certificate-container {
+    width: 900px;
+    height: auto;
+    margin: 40px auto;
+    padding: 40px 60px;
+    box-sizing: border-box;
+    border: 12px solid #0052cc;
+    border-radius: 12px;
+    position: relative;
+    background: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  }
+
+  .watermark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: 'Roboto Slab', serif;
+    font-size: 112px;
+    font-weight: 700;
+    color: #0052cc;
+    opacity: 0.07;
+    transform: translate(-50%, -50%) rotate(-30deg);
+    user-select: none;
+    pointer-events: none;
+    white-space: nowrap;
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+
+  .powerbi-logo, .koption-logo {
+    width: 120px;
+    height: auto;
+    margin: 0 20px; /* Add space between logos */
+  }
+
+  h1.title {
+    color: #0052cc;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 48px;
+    margin-bottom: 6px;
+    letter-spacing: 6px;
+  }
+  
+  .by-koption-label {
+    text-align: center;
+    color: #0052cc; /* Changed color to match certificate text color */
+    font-weight: 600;
+    font-size: 24px; /* Increased font size */
+    margin-bottom: 38px;
+    font-family: 'Montserrat', sans-serif; /* Changed font */
+  }
+
+  h2.subtitle {
+    text-align: center;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 40px;
+    font-size: 20px;
+  }
+
+  .recipient-line {
+    margin-bottom: 32px;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .label {
+    font-weight: 700;
+    color: #0052cc;
+  }
+  .input-field {
+    border: none;
+    border-bottom: 2px solid #0052cc;
+    font-size: 22px;
+    width: 350px;
+    outline: none;
+    padding: 8px 4px;
+    color: #222;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+  }
+  .input-field::placeholder {
+    font-weight: 400;
+    color: #999;
+  }
+
+  .description {
+    font-size: 18px;
+    color: #444;
+    max-width: 700px;
+    margin: 0 auto 48px auto;
+    line-height: 1.45;
+    text-align: center;
+  }
+
+  .signature-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+
+  .signature-block {
+    text-align: center; /* Center the text and image */
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center items horizontally */
+    height: 100px; /* Set a fixed height for alignment */
+  }
+
+  .authorized-signature {
+    width: 150px; /* Adjust width as needed */
+    height: auto;
+    margin-bottom: 0; /* No margin to align with text */
+  }
+
+  .koption-signature {
+    width: 150px; /* Adjust width as needed */
+    height: auto;
+    margin-bottom: 0; /* No margin to align with text */
+  }
+
+  .download-btn {
+    display: block;
+    margin: 20px auto 0 auto;
+    background: #0052cc;
+    color: white;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 10px 28px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,82,204,0.7);
+    transition: background 0.3s ease;
+  }
+  .download-btn:hover {
+    background: #003d99;
+  }
+
+  /* Responsive */
+  @media (max-width: 720px) {
+    .certificate-container {
+      width: 90vw;
+      height: auto;
+      padding: 30px 24px;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="certificate-container" role="main" aria-label="Power BI Certificate Template">
+    <div class="watermark" aria-hidden="true">KOPTION</div>
+    <div class="logo-container">
+      <img src="https://i.postimg.cc/kBfLrBNG/power-bi-logo.png" alt="Microsoft Power BI Logo" class="powerbi-logo" />
+      <img src="https://i.postimg.cc/c6dDsdLn/koption-logo.png" alt="Koption Logo" class="koption-logo" />
+    </div>
+    <h1 class="title">Certificate of Completion</h1>
+    <div class="by-koption-label" aria-label="By Koption">By Koption</div>
+
+    <h2 class="subtitle">This is to certify that</h2>
+
+    <div class="recipient-line">
+      <input type="text" id="nameInput" class="input-field" placeholder="Enter Recipient Name" aria-required="true" />
+    </div>
+
+    <p class="description" id="certDesc">
+      has successfully completed the intensive <strong>Power BI Training Course</strong> offered by <strong>Koption</strong>, 
+      demonstrating comprehensive skills and understanding of Power BI tools and data visualization methods.
+    </p>
+
+    <div class="recipient-line">
+      <label for="dateInput" class="label">Date of Completion:&nbsp;</label>
+      <input type="date" id="dateInput" class="input-field" aria-required="true" />
+    </div>
+
+    <div class="signature-section">
+      <div class="signature-block authorized-by">
+        <img src="https://i.postimg.cc/QBs7pxPg/authorized-signature.png" alt="Authorized Signature" class="authorized-signature" />
+        <div>Authorized Signature</div>
+      </div>
+      <div class="signature-block koption-inc">
+        <img src="https://i.postimg.cc/BPWPnSx1/koption-inc-signature.png" alt="Koption Inc Signature" class="koption-signature" />
+        <div>Koption Inc</div>
+      </div>
+    </div>
+  </div>
+
+  <button type="button" class="download-btn" id="downloadBtn" aria-label="Download certificate as image">Download Certificate</button>
+
+  <!-- Load html2canvas library from CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script>
+    // Download certificate as image
+    document.getElementById('downloadBtn').addEventListener('click', () => {
+      const certificate = document.querySelector('.certificate-container');
+      // Remove input borders for capturing
+      const inputs = certificate.querySelectorAll('input');
+      inputs.forEach(input => input.style.borderBottom = 'none');
+
+      html2canvas(certificate, {scale: 2, useCORS: true}).then(canvas => {
+        // Restore input borders
+        inputs.forEach(input => input.style.borderBottom = '2px solid #0052cc');
+
+        // Create link and download
+        const link = document.createElement('a');
+        link.download = `PowerBI_Certificate_${document.getElementById('nameInput').value || 'Recipient'}.png`;
+        link.href = canvas.toDataURL('image/png');
+        link.click();
+      }).catch(err => alert('Error generating image. Please try again.'));
+    });
+  </script>
+</body>
+</html>
