@@ -13,10 +13,10 @@
     font-family: 'Roboto', sans-serif;
   }
   .certificate-container {
-    width: 900px;
-    height: auto;
+    width: 90%; /* Use percentage for responsive width */
+    max-width: 900px; /* Set a max width for larger screens */
     margin: 40px auto;
-    padding: 40px 60px;
+    padding: 40px 20px; /* Adjust padding for mobile */
     box-sizing: border-box;
     border: 12px solid #0052cc;
     border-radius: 12px;
@@ -45,19 +45,20 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 12px;
+    flex-wrap: wrap; /* Allow logos to wrap on smaller screens */
   }
 
   .powerbi-logo, .koption-logo {
-    width: 120px;
+    width: 100px; /* Adjust logo size for mobile */
     height: auto;
-    margin: 0 20px; /* Add space between logos */
+    margin: 0 10px; /* Add space between logos */
   }
 
   h1.title {
     color: #0052cc;
     text-align: center;
     font-family: 'Roboto Slab', serif;
-    font-size: 48px;
+    font-size: 36px; /* Adjust font size for mobile */
     margin-bottom: 6px;
     letter-spacing: 6px;
   }
@@ -66,8 +67,8 @@
     text-align: center;
     color: #0052cc; /* Changed color to match certificate text color */
     font-weight: 600;
-    font-size: 24px; /* Increased font size */
-    margin-bottom: 38px;
+    font-size: 20px; /* Adjust font size for mobile */
+    margin-bottom: 20px; /* Adjust margin for mobile */
     font-family: 'Montserrat', sans-serif; /* Changed font */
   }
 
@@ -75,13 +76,13 @@
     text-align: center;
     color: #333;
     font-weight: 500;
-    margin-bottom: 40px;
-    font-size: 20px;
+    margin-bottom: 20px; /* Adjust margin for mobile */
+    font-size: 18px; /* Adjust font size for mobile */
   }
 
   .recipient-line {
-    margin-bottom: 32px;
-    font-size: 24px;
+    margin-bottom: 20px; /* Adjust margin for mobile */
+    font-size: 20px; /* Adjust font size for mobile */
     text-align: center;
   }
 
@@ -92,8 +93,9 @@
   .input-field {
     border: none;
     border-bottom: 2px solid #0052cc;
-    font-size: 22px;
-    width: 350px;
+    font-size: 20px; /* Adjust font size for mobile */
+    width: 80%; /* Use percentage for responsive width */
+    max-width: 350px; /* Set a max width for larger screens */
     outline: none;
     padding: 8px 4px;
     color: #222;
@@ -108,10 +110,10 @@
   }
 
   .description {
-    font-size: 18px;
+    font-size: 16px; /* Adjust font size for mobile */
     color: #444;
     max-width: 700px;
-    margin: 0 auto 48px auto;
+    margin: 0 auto 20px auto; /* Adjust margin for mobile */
     line-height: 1.45;
     text-align: center;
   }
@@ -119,7 +121,8 @@
   .signature-section {
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
+    margin-top: 20px; /* Adjust margin for mobile */
+    flex-wrap: wrap; /* Allow signatures to wrap on smaller screens */
   }
 
   .signature-block {
@@ -128,18 +131,23 @@
     flex-direction: column; /* Stack image and text vertically */
     align-items: center; /* Center items horizontally */
     height: 100px; /* Set a fixed height for alignment */
+    margin: 0 10px; /* Add margin for spacing */
   }
 
   .authorized-signature {
-    width: 150px; /* Adjust width as needed */
+    width: 120px; /* Adjust width for mobile */
     height: auto;
     margin-bottom: 0; /* No margin to align with text */
   }
 
   .koption-signature {
-    width: 150px; /* Adjust width as needed */
+    width: 120px; /* Adjust width for mobile */
     height: auto;
     margin-bottom: 0; /* No margin to align with text */
+  }
+
+  .koption-inc {
+    margin-top: 5px; /* Position Koption Inc very close to the bottom border */
   }
 
   .download-btn {
@@ -163,9 +171,7 @@
   /* Responsive */
   @media (max-width: 720px) {
     .certificate-container {
-      width: 90vw;
-      height: auto;
-      padding: 30px 24px;
+      padding: 20px 10px; /* Adjust padding for mobile */
     }
   }
 </style>
