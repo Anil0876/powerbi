@@ -168,6 +168,13 @@
     background: #003d99;
   }
 
+  .orientation-note {
+    text-align: center;
+    font-size: 14px; /* Adjust font size for note */
+    color: #555; /* Color for the note */
+    margin-top: 10px; /* Space above the note */
+  }
+
   /* Responsive */
   @media (max-width: 720px) {
     .certificate-container {
@@ -215,6 +222,10 @@
   </div>
 
   <button type="button" class="download-btn" id="downloadBtn" aria-label="Download certificate as image">Download Certificate</button>
+  
+  <div class="orientation-note">
+    Note: For best viewing, please download the certificate in landscape orientation.
+  </div>
 
   <!-- Load html2canvas library from CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
